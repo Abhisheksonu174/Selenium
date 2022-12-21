@@ -23,7 +23,7 @@ public class CreateVendorsTest {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://rmgtestingserver:8888/");		
+		driver.get("http://localhost:8888/");		
 		driver.findElement(By.name("user_name")).sendKeys("admin");
 		driver.findElement(By.name("user_password")).sendKeys("admin");
 		driver.findElement(By.id("submitButton")).click();
